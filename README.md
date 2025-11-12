@@ -239,16 +239,3 @@ It provides a unified platform to manage study routines efficiently — **anytim
 
 This project is licensed under the **[MIT License](LICENSE)**.
 You are free to use, modify, and distribute this project with attribution.
-
-```
-
----
-
-✅ **Now When You Paste This:**
-- Every code section (`bash`, `json`, `javascript`) will render properly  
-- Folder structure will look like a clean tree  
-- Emojis and text spacing will stay aligned  
-- Works perfectly in both GitHub dark and light modes  
-
-Would you like me to add a **“Screenshots / Demo”** section (with placeholder image tags) so you can upload your UI previews later? It’ll make your repo look even more professional.
-```
