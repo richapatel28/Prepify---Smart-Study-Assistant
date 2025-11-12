@@ -84,28 +84,29 @@ Explanation:
     npm start
 
 ✅ Expected Output:
+   ```bash
    Server running on port 5000
    MongoDB connected successfully
 
 💻 Setup Frontend (Client)
 
    1. Open a new terminal (keep backend running) and navigate to:
-   
+   ```bash
    cd ../smart-study
    
    
    2. Install dependencies:
-   
+   ```bash
    npm install
    
    
    3. Start the React development server:
-   
+   ```bash
    npm run dev
    
    
    4. Open your browser and visit:
-   
+   ```bash
    http://localhost:5173
 
 
@@ -154,6 +155,7 @@ Explanation:
    If setup is correct, you’ll see AI-generated content on screen.
 
 🧾 Folder Structure Summary
+   ```bash
    Prepify-Smart-Study-Assistant/
    │
    ├── backend/                 # Express + MongoDB API
