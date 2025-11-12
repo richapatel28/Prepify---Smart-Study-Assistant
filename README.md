@@ -1,4 +1,3 @@
-
 # 🎓 Prepify – Smart Study Assistant
 
 An **AI-powered study platform** that helps students organize, learn, and prepare efficiently through smart notes, quizzes, to-do tasks, and analytics — all powered by AI.
@@ -56,137 +55,119 @@ Prepify acts as your **personal study companion**, helping you learn smarter, st
 
 Follow these steps to run **Prepify – Smart Study Assistant** locally.
 
-### ⚙️ Setup Backend (Server)
+---
+
+### 🧰 Setup Backend
 
 1. Navigate to the backend folder:
    ```bash
    cd backend
-````
 
-2. Install dependencies:
-   ```bash
-   npm install
+Install dependencies:
 
-3. Create a `.env` file inside `backend/` and add:
-
-   MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/prepify
-   JWT_SECRET=your_jwt_secret_key
-   GEMINI_API_KEY=your_google_gemini_api_key
-   PORT=5000
-
-   **Explanation:**
-
-   * `MONGO_URI` → MongoDB connection string (Atlas/local)
-   * `JWT_SECRET` → Any random secret string for authentication
-   * `GEMINI_API_KEY` → API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
-   * `PORT` → Default backend port (5000)
-
-4. Start the backend server:
-
-   ```bash
-   npm start
+npm install
 
 
-   Or with Nodemon:
+Create a .env file inside backend/ and add:
 
-   ```bash
-   npx nodemon index.js
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/prepify
+JWT_SECRET=your_jwt_secret_key
+GEMINI_API_KEY=your_google_gemini_api_key
+PORT=5000
 
-   ✅ **Expected Output:**
 
-   ```
-   Server running on port 5000
-   MongoDB connected successfully
-   ```
+Explanation:
 
----
+MONGO_URI → MongoDB connection string (Atlas/local)
 
-### 💻 Setup Frontend (Client)
+JWT_SECRET → Any random secret string for authentication
 
-1. Open a new terminal (keep backend running) and navigate to:
+GEMINI_API_KEY → API key from Google AI Studio
 
-   ```bash
-   cd ../smart-study
-   ```
+PORT → Default backend port (5000)
 
-2. Install dependencies:
+Start the backend server:
 
-   ```bash
-   npm install
-   ```
+npm start
 
-3. Start the React development server:
 
-   ```bash
-   npm run dev
-   ```
+Or with Nodemon:
 
-4. Open your browser and visit:
+npx nodemon index.js
 
-   ```
-   http://localhost:5173
-   ```
 
-   ✅ You should now see the **Prepify Dashboard** login screen.
+✅ Expected Output:
 
----
+Server running on port 5000
+MongoDB connected successfully
 
-### 🔑 Create Default User (Optional)
+💻 Setup Frontend (Client)
 
-You can register a user directly via the app’s **Register page**.
+Open a new terminal (keep backend running) and navigate to:
+
+cd ../smart-study
+
+
+Install dependencies:
+
+npm install
+
+
+Start the React development server:
+
+npm run dev
+
+
+Open your browser and visit:
+
+http://localhost:5173
+
+
+✅ You should now see the Prepify Dashboard login screen.
+
+🔑 Create Default User (Optional)
+
+You can register a user directly via the app’s Register page.
 Alternatively, insert a test user in MongoDB:
 
-```json
 {
   "name": "Aarmee Patel",
   "email": "aarmee@example.com",
   "password": "123456"
 }
-```
+
 
 Then log in using that email and password.
 
----
-
-### 🧠 Connecting Backend and Frontend
+🧠 Connecting Backend and Frontend
 
 Your frontend connects by default to:
 
-```
 http://localhost:5000/api
-```
+
 
 If your backend runs on another port, update the base URL in:
 
-```
 smart-study/src/config.js
-```
+
 
 Example:
 
-```javascript
 export const BASE_URL = "http://localhost:5000/api";
-```
 
----
-
-### ⚙️ Testing AI Features
+⚙️ Testing AI Features
 
 To verify Google Gemini AI integration:
 
-* 🧩 **Flowchart Generator**
-  Go to **Notes Section → Add content → Click Generate Flowchart**
+🧩 Flowchart Generator
+Go to Notes Section → Add content → Click Generate Flowchart
 
-* 📋 **AI Answer Generator**
-  Go to **To-Do Section → Add questions → Select multiple → Click Generate Answers**
+📋 AI Answer Generator
+Go to To-Do Section → Add questions → Select multiple → Click Generate Answers
 
-If setup is correct, you’ll see **AI-generated content** on screen.
+If setup is correct, you’ll see AI-generated content on screen.
 
----
-
-## 🧾 Folder Structure Summary
-
-```
+🧾 Folder Structure Summary
 Prepify-Smart-Study-Assistant/
 │
 ├── backend/                 # Express + MongoDB API
@@ -207,30 +188,20 @@ Prepify-Smart-Study-Assistant/
 │   └── package.json         # Frontend dependencies
 │
 └── package.json             # Root config
-```
 
----
+🪄 Future Scope
 
-## 🪄 Future Scope
+🤖 AI-based exam preparation suggestions
 
-* 🤖 AI-based exam preparation suggestions
-* ⏱️ Study time tracking and focus timer
-* 👩‍🏫 Collaboration between students
-* 🎙️ Voice command-based assistant
-* 📅 Google Calendar integration for reminders
+⏱️ Study time tracking and focus timer
 
----
+👩‍🏫 Collaboration between students
 
-## 🏁 Conclusion
+🎙️ Voice command-based assistant
 
-**Prepify** revolutionizes how students learn by combining technology, AI, and simplicity.
-It provides a unified platform to manage study routines efficiently — **anytime, anywhere.** 🌟
+📅 Google Calendar integration for reminders
 
----
+🏁 Conclusion
 
-## 🪪 License
-
-This project is licensed under the **[MIT License](LICENSE)**.
-You are free to use, modify, and distribute this project with attribution.
-
-
+Prepify revolutionizes how students learn by combining technology, AI, and simplicity.
+It provides a unified platform to manage study routines efficiently — anytime, anywhere. 🌟
