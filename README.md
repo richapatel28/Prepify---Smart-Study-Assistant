@@ -69,7 +69,7 @@ Follow these steps to run **Prepify – Smart Study Assistant** locally.
 
    ```bash
    npm install
-   ```
+````
 
 3. Create a `.env` file inside `backend/` and add:
 
