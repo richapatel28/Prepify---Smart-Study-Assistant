@@ -66,7 +66,6 @@ Follow these steps to run **Prepify – Smart Study Assistant** locally.
 ````
 
 2. Install dependencies:
-
    ```bash
    npm install
 ````
