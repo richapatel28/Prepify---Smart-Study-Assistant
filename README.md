@@ -57,14 +57,15 @@ Follow these steps to run **Prepify – Smart Study Assistant** locally.
 
 ### ⚙️ Setup Backend (Server)
 
-1. Navigate to the backend folder:
+1. Navigate to the backend folder
    ```bash
    cd backend
    
-2. Install dependencies:
+2. Install dependencies
 npm install
 
-3. Create a .env file inside backend/ and add:
+3. Create a .env file inside backend/ and add
+   
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/prepify
 JWT_SECRET=your_jwt_secret_key
 GEMINI_API_KEY=your_google_gemini_api_key
@@ -171,7 +172,6 @@ Prepify-Smart-Study-Assistant/
 │   └── package.json         # Frontend dependencies
 │
 └── package.json             # Root config
-
 🪄 Future Scope
 
 AI-based exam preparation suggestions
