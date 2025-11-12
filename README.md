@@ -62,10 +62,12 @@ Follow these steps to run **Prepify – Smart Study Assistant** locally.
    cd backend
 
 2. Install dependencies:
+     ```bash
    npm install
 
 
-3. Create a .env file inside backend/ and add:
+4. Create a .env file inside backend/ and add:
+     ```bash
    MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/prepify
    JWT_SECRET=your_jwt_secret_key
    GEMINI_API_KEY=your_google_gemini_api_key
@@ -79,9 +81,11 @@ GEMINI_API_KEY → API key from Google AI Studio
 PORT → Default backend port (5000)
 
 4. Start the backend server:
+     ```bash
    npm start
 
 ✅ Expected Output:
+  ```bash
 
 Server running on port 5000
 MongoDB connected successfully
@@ -152,7 +156,7 @@ Go to To-Do Section → Add questions → Select multiple → Click Generate Ans
 If setup is correct, you’ll see AI-generated content on screen.
 
 🧾 Folder Structure Summary
-
+  ```bash
 Prepify-Smart-Study-Assistant/
 │
 ├── backend/                 # Express + MongoDB API
