@@ -1,4 +1,5 @@
 🎓 Prepify – Smart Study Assistant
+
 An AI-powered study platform that helps students organize, learn, and prepare efficiently through smart notes, quizzes, to-do tasks, and analytics — all powered by AI.
 
 🧠 Overview
