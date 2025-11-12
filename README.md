@@ -62,116 +62,119 @@ Follow these steps to run **Prepify – Smart Study Assistant** locally.
    cd backend
    
 2. Install dependencies
-npm install
+   ```bash
+   npm install
 
-3. Create a .env file inside backend/ and add
+4. Create a .env file inside backend/ and add
    
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/prepify
-JWT_SECRET=your_jwt_secret_key
-GEMINI_API_KEY=your_google_gemini_api_key
-PORT=5000
+   MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/prepify
+   JWT_SECRET=your_jwt_secret_key
+   GEMINI_API_KEY=your_google_gemini_api_key
+   PORT=5000
 
 Explanation:
 
-MONGO_URI → MongoDB connection string (Atlas/local)
-JWT_SECRET → Any random secret string for authentication
-GEMINI_API_KEY → API key from Google AI Studio
-PORT → Default backend port (5000)
+   MONGO_URI → MongoDB connection string (Atlas/local)
+   JWT_SECRET → Any random secret string for authentication
+   GEMINI_API_KEY → API key from Google AI Studio
+   PORT → Default backend port (5000)
 
 4. Start the backend server:
-npm start
+    ```bash
+    npm start
 
 ✅ Expected Output:
-Server running on port 5000
-MongoDB connected successfully
+   Server running on port 5000
+   MongoDB connected successfully
 
 💻 Setup Frontend (Client)
 
-1. Open a new terminal (keep backend running) and navigate to:
-
-cd ../smart-study
-
-
-2. Install dependencies:
-
-npm install
-
-
-3. Start the React development server:
-
-npm run dev
-
-
-4. Open your browser and visit:
-
-http://localhost:5173
+   1. Open a new terminal (keep backend running) and navigate to:
+   
+   cd ../smart-study
+   
+   
+   2. Install dependencies:
+   
+   npm install
+   
+   
+   3. Start the React development server:
+   
+   npm run dev
+   
+   
+   4. Open your browser and visit:
+   
+   http://localhost:5173
 
 
 ✅ You should now see the Prepify Dashboard login screen.
 
 🔑 Create Default User (Optional)
-
-You can register a user directly via the app’s Register page.
-Alternatively, insert a test user in MongoDB:
-
-{
-  "name": "Aarmee Patel",
-  "email": "aarmee@example.com",
-  "password": "123456"
-}
-
-
-Then log in using that email and password.
+   
+   You can register a user directly via the app’s Register page.
+   Alternatively, insert a test user in MongoDB:
+   
+   {
+     "name": "Aarmee Patel",
+     "email": "aarmee@example.com",
+     "password": "123456"
+   }
+   
+   
+   Then log in using that email and password.
 
 🧠 Connecting Backend and Frontend
 
-Your frontend connects by default to:
-
-http://localhost:5000/api
-
-
-If your backend runs on another port, update the base URL in:
-
-smart-study/src/config.js
-
-
-Example:
-
-export const BASE_URL = "http://localhost:5000/api";
-
+   Your frontend connects by default to:
+   
+   http://localhost:5000/api
+   
+   
+   If your backend runs on another port, update the base URL in:
+   
+   smart-study/src/config.js
+   
+   
+   Example:
+   
+   export const BASE_URL = "http://localhost:5000/api";
+   
 ⚙️ Testing AI Features
 
-To verify Google Gemini AI integration:
-
-🧩 Flowchart Generator
-Go to Notes Section → Add content → Click Generate Flowchart
-
-📋 AI Answer Generator
-Go to To-Do Section → Add questions → Select multiple → Click Generate Answers
-
-If setup is correct, you’ll see AI-generated content on screen.
+   To verify Google Gemini AI integration:
+   
+   🧩 Flowchart Generator
+   Go to Notes Section → Add content → Click Generate Flowchart
+   
+   📋 AI Answer Generator
+   Go to To-Do Section → Add questions → Select multiple → Click Generate Answers
+   
+   If setup is correct, you’ll see AI-generated content on screen.
 
 🧾 Folder Structure Summary
-Prepify-Smart-Study-Assistant/
-│
-├── backend/                 # Express + MongoDB API
-│   ├── controllers/         # API logic (notes, user, ai, etc.)
-│   ├── routes/              # API endpoints
-│   ├── models/              # MongoDB schemas
-│   ├── middleware/          # JWT authentication
-│   ├── services/            # Google Gemini AI integration
-│   ├── index.js             # Server entry point
-│   ├── .env                 # Environment variables
-│
-├── smart-study/             # React frontend
-│   ├── src/
-│   │   ├── components/      # UI pages (Notes, Todo, Quiz, etc.)
-│   │   ├── App.tsx          # Main app entry
-│   │   ├── router.tsx       # Route navigation
-│   │   ├── index.css        # Styling
-│   └── package.json         # Frontend dependencies
-│
-└── package.json             # Root config
+   Prepify-Smart-Study-Assistant/
+   │
+   ├── backend/                 # Express + MongoDB API
+   │   ├── controllers/         # API logic (notes, user, ai, etc.)
+   │   ├── routes/              # API endpoints
+   │   ├── models/              # MongoDB schemas
+   │   ├── middleware/          # JWT authentication
+   │   ├── services/            # Google Gemini AI integration
+   │   ├── index.js             # Server entry point
+   │   ├── .env                 # Environment variables
+   │
+   ├── smart-study/             # React frontend
+   │   ├── src/
+   │   │   ├── components/      # UI pages (Notes, Todo, Quiz, etc.)
+   │   │   ├── App.tsx          # Main app entry
+   │   │   ├── router.tsx       # Route navigation
+   │   │   ├── index.css        # Styling
+   │   └── package.json         # Frontend dependencies
+   │
+   └── package.json             # Root config
+   
 🪄 Future Scope
 
 AI-based exam preparation suggestions
