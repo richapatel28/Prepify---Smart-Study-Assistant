@@ -1,4 +1,5 @@
 
+````markdown
 # 🎓 Prepify – Smart Study Assistant
 
 An **AI-powered study platform** that helps students organize, learn, and prepare efficiently through smart notes, quizzes, to-do tasks, and analytics — all powered by AI.
@@ -237,21 +238,5 @@ It provides a unified platform to manage study routines efficiently — **anytim
 
 This project is licensed under the **[MIT License](LICENSE)**.
 You are free to use, modify, and distribute this project with attribution.
-
----
-
-## 🧩 Repository Tags
-
-`#react` `#nodejs` `#express` `#mongodb` `#ai` `#gemini` `#study-assistant` `#education` `#webapp`
-
----
-
-## 👩‍💻 Author
-
-**Richa Patel**
-💌 *Creator of Prepify – Smart Study Assistant*
-📚 Passionate about AI, education, and modern web development.
-
-```
 
 
