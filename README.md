@@ -65,18 +65,14 @@ Follow these steps to run **Prepify – Smart Study Assistant** locally.
 
 2. Install dependencies:
 
-   ```bash
    npm install
-   ```
 
 3. Create a `.env` file inside `backend/` and add:
 
-   ```env
    MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/prepify
    JWT_SECRET=your_jwt_secret_key
    GEMINI_API_KEY=your_google_gemini_api_key
    PORT=5000
-   ```
 
    **Explanation:**
 
