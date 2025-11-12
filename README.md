@@ -64,7 +64,7 @@ Follow these steps to run **Prepify – Smart Study Assistant** locally.
 ````
 
 2. Install dependencies:
-
+   ```bash
    npm install
 
 3. Create a `.env` file inside `backend/` and add:
@@ -85,13 +85,12 @@ Follow these steps to run **Prepify – Smart Study Assistant** locally.
 
    ```bash
    npm start
-   ```
+
 
    Or with Nodemon:
 
    ```bash
    npx nodemon index.js
-   ```
 
    ✅ **Expected Output:**
 
