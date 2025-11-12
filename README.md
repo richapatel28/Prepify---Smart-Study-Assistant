@@ -86,28 +86,27 @@ PORT → Default backend port (5000)
 
 ✅ Expected Output:
   ```bash
-
 Server running on port 5000
 MongoDB connected successfully
 
 💻 Setup Frontend (Client)
 
 Open a new terminal (keep backend running) and navigate to:
-
+  ```bash
 cd ../smart-study
 
 Install dependencies:
-
+  ```bash
 npm install
 
 
 Start the React development server:
-
+  ```bash
 npm run dev
 
 
 Open your browser and visit:
-
+  ```bash
 http://localhost:5173
 
 
@@ -117,7 +116,7 @@ http://localhost:5173
 
 You can register a user directly via the app’s Register page.
 Alternatively, insert a test user in MongoDB:
-
+  ```bash
 {
   "name": "Aarmee Patel",
   "email": "aarmee@example.com",
@@ -130,17 +129,17 @@ Then log in using that email and password.
 🧠 Connecting Backend and Frontend
 
 Your frontend connects by default to:
-
+  ```bash
 http://localhost:5000/api
 
 
 If your backend runs on another port, update the base URL in:
-
+  ```bash
 smart-study/src/config.js
 
 
 Example:
-
+  ```bash
 export const BASE_URL = "http://localhost:5000/api";
 
 ⚙️ Testing AI Features
