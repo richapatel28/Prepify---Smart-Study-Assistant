@@ -85,7 +85,6 @@ PORT → Default backend port (5000)
    npm start
 
 ✅ Expected Output:
-  ```bash
 Server running on port 5000
 MongoDB connected successfully
 
